@@ -75,4 +75,63 @@ class Hora {
         echo $this->hora.":".$this->minuto.":".$segundo."<br>";
     }
 }
+
+class Libro {
+    public $titulo;
+    public $precio;
+    public $stock;
+    public $autor;
+    public $autor2;
+
+    function __construct($titulo, $precio, $stock, $autor, $autor2) {
+        $this->titulo=$titulo;
+        $this->precio=$precio;
+        $this->stock=$stock;
+        $this->autor=$autor;
+        $this->autor2=$autor2;
+    }
+
+    function imprimir() {
+        echo "Titulo: ".$this->titulo."<br>";
+        echo "Precio: ".$this->precio." pesos <br>";
+        echo "Stock: ".$this->stock." unidaes <br>";
+        echo "Autores: ".$this->autor.", ".$this->autor2."<br>";
+    }
+
+    function modStock($stock){
+        $newStock = $this->stock + $stock;
+        $this->stock=$newStock;
+    }
+
+    function modPrecio($precio){
+        $this->precio=$precio;
+    }
+
+    function mensaje(){
+        echo "El libro ".$this->titulo." de ".$this->autor.", ".$this->autor2.", se vende a $".$this->precio;
+    }
+}
+
+class Autor {
+    public $nombre;
+    public $apellido;
+    public $email;
+    public $edad;
+
+    function __construct($nombre, $apellido, $email, $edad){
+        $this->nombre=$nombre;
+        $this->apellido=$apellido;
+        $this->email=$email;
+        $this->edad=$edad;
+    }
+
+    function imprimir(){
+        echo "Nombre: ".$this->nombre."<br>";
+        echo "Apellido: ".$this->apellido."<br>";
+        echo "Email: ".$this->email."<br>";
+        echo "Edad: ".$this->edad." años <br>"; 
+    }
+
+}
+
 ?>
