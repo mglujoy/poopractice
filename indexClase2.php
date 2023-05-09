@@ -1,5 +1,5 @@
 <?php
-    /*echo "<h3>Ejercicio 1</h3>";
+    //echo "<h3>Ejercicio 1</h3>";
     require 'Classes.php';
     $Persona = new Persona('Maximiliano','Glujoy','29/12/86');
     //echo $Persona->saludo();
@@ -42,8 +42,5 @@
     $libro1->imprimir();
     echo "<br>";
     $libro1->mensaje();
-*/
-?>
-<?php
 
 ?>

@@ -1,4 +1,5 @@
 <?php
+
 class Persona {
     var $nombre;
     var $apellido;
