@@ -45,5 +45,25 @@
 */
 ?>
 <?php
+/* */
+require 'ClassesClase3.php';
+echo "<h3>Clase 3 Ejercicio 1</h3>";
 
+$persona1 = new Persona("Maxi", 36);
+$persona1->imprimir();
+$persona1->setNombre("Maximiliano");
+$persona1->setEdad(30);
+echo "<br>";
+$persona1->imprimir();
+
+echo "<br>";
+$empleado1 = new Empleado("Maximiliano", 30, 600);
+$empleado1->imprimir();
+$empleado1->getSueldo();
+echo "<br>";
+$empleado1->setNombre("Maxi");
+$empleado1->setEdad(36);
+$empleado1->imprimir();
+$empleado1->setSueldo(1000);
+$empleado1->getSueldo();
 ?>
