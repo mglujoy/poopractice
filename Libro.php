@@ -71,3 +71,5 @@ echo "Edad: " . $libro1->autores[0]->edad . "<br><br>";
 
 // Imprimir el mensaje del libro "Effective Java"
 $libro1
+
+?>

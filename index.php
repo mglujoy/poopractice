@@ -45,7 +45,8 @@
 */
 ?>
 <?php
-/* */
+echo "<h3>Práctica de Programación Orientada a Objetos</h3>";
+/* 
 require 'ClassesClase3.php';
 echo "<h3>Clase 3 Ejercicio 1</h3>";
 
@@ -66,4 +67,5 @@ $empleado1->setEdad(36);
 $empleado1->imprimir();
 $empleado1->setSueldo(1000);
 $empleado1->getSueldo();
+*/
 ?>
